@@ -8,16 +8,37 @@
     <a-scene light="defaultLightsEnabled: false">
 
       <!-- light source element -->
-      <!-- <a-entity light="type: ambient"></a-entity> -->
+       <a-entity light="type: ambient"></a-entity> 
 
       <!-- our camera aka user perspective element -->
-      <!-- <a-entity camera look-controls wasd-controls position="0 0 15"></a-entity> -->
+       <a-entity camera look-controls wasd-controls position="0 0 15"></a-entity> 
 
       <!-- our initial sphere in the center of the scene -->
       <!-- your sphere here! -->
-
+      <!--<a-sphere position = "0 0 0" radius = "2" color = "pink"></a-sphere>-->
+      <a-sphere src="./assets/wall-texture.jpg" position = "0 0 0" radius = "6">  
+      <a-animation
+          attribute="rotation"
+          dur="10000"
+          fill="none"
+          from="0 0 0"
+          to="0 360 0"
+          easing="linear"
+          repeat="indefinite">
+        </a-animation>
+        </a-sphere>
+        <!--<a-torus-knot position="0 2.5 -5"radius-inner="1" radius-outer="2" color="yellow"> <a-animation-->
+        <!--  attribute="rotation"-->
+        <!--  dur="10000"-->
+        <!--  fill="none"-->
+        <!--  from="0 0 0"-->
+        <!--  to="0 360 0"-->
+        <!--  easing="linear"-->
+        <!--  repeat="indefinite">-->
+        <!--</a-animation></a-torus-knot>-->
+        <!--<a-box position = "0 0 0" color= "red"></a-box>-->
     </a-scene>
-
+      <!--<a-box position="-1 1 -3" rotation="45 45 45" color="#4CC3D9"></a-box>-->
     <script src="./index.js"></script>
   </body>
 
